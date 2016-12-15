@@ -51,3 +51,9 @@ function stripBOM(content) {
 var pkg   = JSON.parse(stripBOM(fs.readFileSync('./package.json', {
   encoding: "utf8"
 })));
+
+// To get build system(s) information.
+///-----------------------------------
+var seed  = JSON.parse(stripBOM(fs.readFileSync('./seed.json', {
+  encoding: "utf8"
+})));
