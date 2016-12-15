@@ -28,3 +28,7 @@
  * --/The Heart of Build System/-- of "ITPDB®-Data".
  * _____________________________________________________________________________
  */
+
+// To load required Node module.
+// -----------------------------
+var fs    = require('fs');
