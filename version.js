@@ -68,3 +68,4 @@ var version = {
 
 // Exposing — Package and SEED™.
 module.exports = version;
+// -----|EOF|-----
