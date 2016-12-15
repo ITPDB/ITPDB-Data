@@ -168,3 +168,11 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by markdown
+*.utf8.md
+*.knit.md
