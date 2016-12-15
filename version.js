@@ -45,3 +45,9 @@ function stripBOM(content) {
   }
   return content;
 }
+
+// To get asset(s) information.
+///----------------------------
+var pkg   = JSON.parse(stripBOM(fs.readFileSync('./package.json', {
+  encoding: "utf8"
+})));
