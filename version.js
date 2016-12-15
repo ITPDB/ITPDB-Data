@@ -65,3 +65,6 @@ var version = {
   "pkg"     : pkg.version,
   "seed"    : seed.version
 };
+
+// Exposing — Package and SEED™.
+module.exports = version;
