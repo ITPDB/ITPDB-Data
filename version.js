@@ -57,3 +57,11 @@ var pkg   = JSON.parse(stripBOM(fs.readFileSync('./package.json', {
 var seed  = JSON.parse(stripBOM(fs.readFileSync('./seed.json', {
   encoding: "utf8"
 })));
+
+///-------------------
+// An object literals.
+///-------------------
+var version = {
+  "pkg"     : pkg.version,
+  "seed"    : seed.version
+};
