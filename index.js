@@ -47,3 +47,4 @@ var path       = require('path');
 // To load required NPM modules.
 // -----------------------------
 var chalk      = require('chalk');
+var semver     = require('semver');
