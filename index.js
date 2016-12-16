@@ -87,3 +87,9 @@ function stripBOM(content) {
 var cite = JSON.parse(stripBOM(fs.readFileSync('./citation.json', {
   encoding: "utf8"
 })));
+
+// To get credential(s) information.
+///---------------------------------
+var pass  = JSON.parse(stripBOM(fs.readFileSync('./secret.json', {
+  encoding: "utf8"
+})));
