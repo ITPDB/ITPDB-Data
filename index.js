@@ -28,3 +28,6 @@
  * --/The Heart of Data System/-- of "ITPDB®-Data".
  * _____________________________________________________________________________
  */
+
+// global __dirname: true
+// global require: true
