@@ -93,3 +93,6 @@ var cite = JSON.parse(stripBOM(fs.readFileSync('./citation.json', {
 var pass  = JSON.parse(stripBOM(fs.readFileSync('./secret.json', {
   encoding: "utf8"
 })));
+
+// Global access variables.
+var message   = "ITPDB® — Supported under Mac OS X and Linux only!";
