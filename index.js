@@ -102,3 +102,23 @@ var version   = require("./version");
 // Our working engines.
 var engines   = "0.12 || >= 4";
 var Broken    = ">=0.1 <=0.7";
+
+
+// ----------------------------------------------------------------------------------------------------------
+///-------------------------
+// A smart license function.
+///------- Apache ----------
+var license   = [
+  '/*!                                                                                                   ',
+  ' * Build System — ' + yeep(build.system) + ': ' + okay(build.name) + ' — ' + goop(version.seed)        ,
+  ' * ' + boop(build.audience)                                                                            ,
+  ' * ---------------------------------------------------------------------------                        ',
+  ' * Copyright © 2015 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.   ',
+  ' * Available via the Apache License, version 2.0. [http://www.apache.org/licenses/]                   ',
+  ' * See: http://seed.sequomics.com/ — for details.                                                     ',
+  ' * ---------------------------------------------------------------------------                        ',
+  ' */                                                                                                   ',
+  '\n',
+].map(function(s) {
+  return s.replace(/\s+$/, '');
+}).join("\n");
