@@ -99,3 +99,6 @@ var message   = "ITPDB® — Supported under Mac OS X and Linux only!";
 var contact   = "database@sequomics.com";
 // Our versioning system.
 var version   = require("./version");
+// Our working engines.
+var engines   = "0.12 || >= 4";
+var Broken    = ">=0.1 <=0.7";
