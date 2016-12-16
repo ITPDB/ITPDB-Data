@@ -122,3 +122,27 @@ var license   = [
 ].map(function(s) {
   return s.replace(/\s+$/, '');
 }).join("\n");
+
+///-------------------------
+// A smart banner function.
+///------- Apache ----------
+var banner    = [
+  '/*!                                                                                                   ',
+  ' * ———————————————————                                                                                ',
+  ' * ITPDB®-Data: v' + version.pkg                                                                       ,
+  ' * ———————————————————                                                                                ',
+  ' * Data of ITPDB — A manually curated dedicated ion transport proteins database.                      ',
+  ' * From the Desk of Prabhat Kumar — CEO, Founder & Scientist.                                         ',
+  ' * ---------------------------------------------------------------------------------                  ',
+  ' * Copyright © 2006 - ' + new Date().getFullYear() + ', Prabhat Kumar, All rights reserved.           ',
+  ' * Copyright © 2016 - ' + new Date().getFullYear() + ', Centre for Computational Protein Engineering. ',
+  ' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Research, All rights reserved.      ',
+  ' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.   ',
+  ' * ---------------------------------------------------------------------------------                  ',
+  ' * Released under the Apache License, version 2.0 (http://www.apache.org/licenses/).                  ',
+  ' */                                                                                                   ',
+  '\n',
+].map(function(s) {
+  return s.replace(/\s+$/, '');
+}).join("\n");
+// ----------------------------------------------------------------------------------------------------------
