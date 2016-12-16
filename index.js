@@ -97,3 +97,5 @@ var pass  = JSON.parse(stripBOM(fs.readFileSync('./secret.json', {
 // Global access variables.
 var message   = "ITPDB® — Supported under Mac OS X and Linux only!";
 var contact   = "database@sequomics.com";
+// Our versioning system.
+var version   = require("./version");
