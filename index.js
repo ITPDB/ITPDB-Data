@@ -34,3 +34,6 @@
 
 // # Usage: $ node -v
 // # Usage: $ npm -v
+
+// Invoking strict mode.
+"use strict";
