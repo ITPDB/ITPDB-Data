@@ -29,3 +29,7 @@
  * --/The Heart of Build System/-- of "ITPDB®-Data".
  * _____________________________________________________________________________
  */
+
+
+// global __dirname: true
+// global require: true
