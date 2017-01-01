@@ -44,3 +44,4 @@
 // To load required Node module.
 // -----------------------------
 var os         = require('os');
+var fs         = require('fs');
