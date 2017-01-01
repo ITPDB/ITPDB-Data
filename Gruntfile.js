@@ -58,3 +58,14 @@ var yeep       = chalk.green;
 var okay       = chalk.blue;
 var boop       = chalk.cyan;
 var goop       = chalk.gray;
+
+///-------------------
+// An object literals.
+///-------------------
+var build = {
+  // Non-identifier property names are quoted.
+  "system"     : "SEED™",
+  "name"       : "Skövde",
+  "year"       : "2016",
+  "audience"   : "for all scientist and computational biologist."
+};
