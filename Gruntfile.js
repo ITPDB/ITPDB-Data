@@ -33,3 +33,7 @@
 
 // global __dirname: true
 // global require: true
+
+// # Usage: $ node -v
+// # Usage: $ npm -v
+// # Usage: $ grunt -version
