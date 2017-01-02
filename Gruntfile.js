@@ -106,3 +106,8 @@ module.exports = function(grunt) {
   
   /// Loading Externally-Defined Tasks.
   grunt.loadTasks('tasks');
+  
+  /// Loading all the tasks options in `tasks/options`,
+  /// based on the name:
+  /// \---------------- coffee.js => coffee{}
+  grunt.util._.extend(config, loadConfig('./tasks/options/'));
