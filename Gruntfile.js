@@ -76,3 +76,7 @@ var build = {
 // ----------------------------------------------------------------------------------------------------------
 
 module.exports = function(grunt) {
+  
+  // Force use of Unix newlines.
+  // http://gruntjs.com/api/grunt.util
+  grunt.util.linefeed = '\n';
