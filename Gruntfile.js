@@ -84,3 +84,17 @@ module.exports = function(grunt) {
   // 1. time-grunt ——> $ npm install time-grunt --save-dev
   // Display the elapsed execution time of grunt tasks.
   require('time-grunt')(grunt);
+  
+  // Utility to load the different option files,
+  // based on their names — @using `glob`.
+  function loadConfig(path) {
+    var object = {};
+    var key;
+    glob.sync('*', {
+      cwd: path
+    }).forEach(function(option) {
+      key = option.replace(/\.js$/,'');
+      object[key] = require(path + option);
+    });
+    return object;
+  }
