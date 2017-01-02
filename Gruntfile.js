@@ -127,3 +127,28 @@ module.exports = function(grunt) {
     // Traverse up the file hierarchy looking for dependencies like `require()`.
     requireResolution: true
   });
+  
+  // A Default Task of SEED™.
+  grunt.registerTask('default', 'To know about the Build System.', function(){
+    // Build System License and Information.
+    var license = [
+      '/*!                                                                                                   ',
+      ' * Build System — ' + yeep(build.system) + ': ' + okay(build.name)                                     ,
+      ' * ' + boop(build.audience)                                                                            ,
+      ' * ---------------------------------------------------------------------------------                  ',
+      ' * Copyright © 2015 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.   ',
+      ' * Available via the Apache License, version 2.0. [http://www.apache.org/licenses/]                   ',
+      ' * See: http://seed.sequomics.com/ — for details.                                                     ',
+      ' * ---------------------------------------------------------------------------------                  ',
+      ' * You are running O/S type —— ' + boop(os.type()) + ' and architecture is —— ' + noop(os.arch())      ,
+      ' * ---------------------------------------------------------------------------------                  ',
+      ' */                                                                                                   ',
+      '\n',
+    ].map(function(s) {
+      return s.replace(/\s+$/, '');
+    }).join("\n");
+    
+    // Printing about SEED™.
+    grunt.log.writeln(goop(license));
+  
+  });
