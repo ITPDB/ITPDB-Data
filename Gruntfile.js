@@ -114,3 +114,16 @@ module.exports = function(grunt) {
   
   // Project configuration for -//ITPDB®//- Build.
   grunt.initConfig(config);
+  
+  // 2. load-grunt-tasks ——> $ npm install load-grunt-tasks --save-dev
+  // Load multiple grunt tasks using the globbing patterns.
+  require('load-grunt-tasks')(grunt, {
+    scope: [
+      'dependencies',
+      'devDependencies',
+      'peerDependencies',
+      'optionalDependencies'
+    ],
+    // Traverse up the file hierarchy looking for dependencies like `require()`.
+    requireResolution: true
+  });
